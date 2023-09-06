@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <script>
-    let med = [];
     let num = [];
-
+    
     for (let n = 15; n < 101; n++) {
-        num.push(n)
+        num.push(n);
         
     }
     var soma = 0;
@@ -12,4 +11,9 @@ for (var i = 0; i < num.length; i++) {
     soma += num[i];
 }
 
+var med = soma / num.length;
+
+document.write("a média aritmética" + med);
+
 </script>
+<a href="index.html"> <br>voltar para tela inicial<br></a>

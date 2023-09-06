@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<script>
+    let e = "s";
+    let aprovados = 0;
+    let reprovados = 0;
+    while (e === "s") {
+        let notas = [];
+        let nota1 = parseFloat(prompt("digite a 1 nota"));
+        let nota2 = parseFloat(prompt("digite a 2 nota"));
+
+        notas.push(nota1, nota2);
+        let resultado = notas.reduce((a, b) => a + b) / notas.length;
+
+        if (resultado >= 9.5) {
+            alert("Aprovado");
+            aprovados++
+        } else {
+            alert("Não aprovado");
+            reprovados++
+        }
+        e = prompt("Calcular a média de outro aluno Sim/Não?");
+    }
+
+document.write(`Foram aprovados ${aprovados} alunos e reprovados ${reprovados} alunos`)
+
+</script>
+<a href="index.html">voltar para tela inicial</a>

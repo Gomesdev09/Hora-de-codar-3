@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+function calcularMedia(n1, n2){  
+let soma = [];
+let contador = [];
+
+for (let M = n1; M <= n2; M++) {
+    soma += M
+    contador++;
+
+    return soma / contador; //finaliza a funçao
+}
+}
+
+let num1 = parseInt(prompt("Informe o primeiro número:"));
+let num2 = parseInt(prompt("Informe o segundo número:"));
+
+if (num1 < num2) {
+    let media = calcularMedia(num1, num2);
+    document.write("A média aritmética é: " + media);
+} else {
+    document.write(prompt("O primeiro número deve ser menor que o segundo."));
+}
+</script>
+<a href="index.html">voltar para tela inicial</a>

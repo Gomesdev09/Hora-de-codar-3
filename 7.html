@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script>
+    notas = [];
+    for (let n = 0; n < 6; n++) {
+        var nota = parseFloat(prompt(`Digite sua ${n+1} nota`));
+        while (nota > 10) {
+            var nota = parseFloat(prompt(`Digite sua ${n+1} nota novamente`));
+        }
+        notas.push(nota);
+    }
+    let media = notas.reduce((a, b) => a + b) / notas.length;
+   
+    document.write(`a media do seu aluno é ${media}`);
+</script>
+<a href="index.html">voltar para tela inicial</a>
